@@ -1,0 +1,9 @@
+package UppercaseExample;
+
+public class UppercaseExample {
+	    public static void main(String[] args) {
+	        String str = "java programming";
+	        System.out.println(str.toUpperCase());
+	    }
+	}
+

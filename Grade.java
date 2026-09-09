@@ -1,23 +1,19 @@
-package laddernested;
-import java.util.scanneer;
+package Switchcase;
+impoort java.util.scanner;
 public class Grade {
-	  public static void main(String[] args) {
-
+	 public static void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);
 
-	        System.out.print("Enter mark: ");
-	        int mark = sc.nextInt();
+	        System.out.print("Enter Grade (A/B/C/D): ");
+	        char grade = sc.next().charAt(0);
 
-	        if(mark >= 90) 
-	            System.out.println("Grade A");
-	        
-	        else if(mark >= 75) 
-	            System.out.println("Grade B");
-	        
-	        else if(mark >= 50) 
-	            System.out.println("Grade C");
-	        
-	        else 
-	            System.out.println("Fail");
-	  }
+	        switch(grade) {
+	            case 'A': System.out.println("Excellent"); break;
+	            case 'B': System.out.println("Good"); break;
+	            case 'C': System.out.println("Average"); break;
+	            case 'D': System.out.println("Pass"); break;
+	            default: System.out.println("Fail");
+	        }
+	    }
+	}
 }
